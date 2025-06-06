@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Card Layout Example</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    nav ul {
+      list-style-type: none;
+      background-color: lightgreen;
+      overflow: hidden;
+    }
+
+    nav ul li {
+      float: left;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 14px 16px;
+      text-decoration: none;
+      color: black;
+      text-align: center;
+      margin: 0;
+    }
+
+    .active {
+      background-color: blue;
+      color: white;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 20px;
+      justify-content: left;
+      margin-top: 30px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 250px;
+      padding: 16px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin-bottom: 12px;
+    }
+
+    .card h1 {
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a class="active" href="#">Product</a></li>
+        </ul>
+    </nav>
+
+    <div class="card-container">
+    
+        <div class="card">
+        <img src="camera.jpg" alt="Camera image">
+        <h1>This is camera in row1</h1>
+        </div>
+
+        <div class="card">
+        <img src="images.jpg" alt="Panda image">
+        <h1>This is image of panda frame in row1</h1>
+        </div>
+
+        <div class="card">
+        <img src="natureimg.jpg" alt="Nature image">
+        <h1>This is blub which glows without power</h1>
+        </div>
+
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+        <img src="camera.jpg" alt="Camera image">
+        <h1>This is Handy camera image in row2</h1>
+        </div>
+
+        <div class="card">
+        <img src="images.jpg" alt="Panda image">
+        <h1>This is image of panda photo frame in row2</h1>
+        </div>
+
+        <div class="card">
+        <img src="natureimg.jpg" alt="Nature image">
+        <h1>This is inverter blub image in row2</h1>
+        </div>
+    </div>
+</body>
+</html>
+
+
